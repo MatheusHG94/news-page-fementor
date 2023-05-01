@@ -1,6 +1,9 @@
+import MainPage from "./pages/MainPage";
+import './styles/globalStyles.scss'
+
 function App() {
   return (
-    <h1>Hello world!</h1>
+    <MainPage />
   );
 }
 
