@@ -1,0 +1,14 @@
+.mostReadNews {
+
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3, 1fr);
+
+        margin: 1rem 0;
+
+        img {
+            grid-row: 1 / 4;
+        }
+    }
+}

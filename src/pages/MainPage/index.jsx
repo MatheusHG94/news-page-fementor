@@ -2,6 +2,8 @@ import React from 'react'
 import Header from 'components/Header'
 import Banner from 'components/Banner'
 import MainNews from 'components/MainNews'
+import RecentNews from 'components/RecentNews'
+import MostReadNews from 'components/MostReadNews'
 
 export default function MainPage() {
   return (
@@ -10,6 +12,8 @@ export default function MainPage() {
       <main>
         <Banner />
         <MainNews />
+        <RecentNews />
+        <MostReadNews />
       </main>
     </>
   )
