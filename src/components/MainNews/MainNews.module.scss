@@ -1,0 +1,20 @@
+@import 'styles/variables';
+
+.mainNews {
+    margin: 2rem 0 4rem 0;
+
+    h1 {
+        color: $dark-blue;
+        font-weight: $font-bolder;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        color: $grayish-blue;
+        font-weight: $font-normal;
+        font-size: 1rem;
+        line-height: 2;
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,9 +1,37 @@
+@import 'styles/variables';
+
 .recentNews {
-    background-color: black;
+    background-color: $dark-blue;
     color: white;
-    padding: 1rem;
+    padding: 0 1.5rem;
+
+    h2 {
+        color: $orange;
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
 
     .news {
-        border: 1px solid red;
+
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid $grayish-blue;
+
+        h3 {
+            color: $off-white;
+            margin-bottom: .5rem;
+            font-weight: 700;
+        }
+
+        p{
+            color: $off-white;
+            font-weight: 300;
+            line-height: 2;
+            font-size: 1rem;
+        }
+        
+        &:last-child {
+            border: 0;
+        }
     }
 }

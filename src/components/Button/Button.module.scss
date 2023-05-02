@@ -1,9 +1,12 @@
+@import 'styles/variables';
+
 .button {
     border: 0;
-    padding: 1rem 2rem;
-    background-color: salmon;
-    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    background-color: $red;
     color: white;
-    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: $font-bold;
     letter-spacing: 4px;
+    font-size: .825rem;
 }
