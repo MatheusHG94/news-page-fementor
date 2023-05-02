@@ -18,3 +18,13 @@ export default function MainPage() {
     </>
   )
 }
+
+/* 
+    ANTES DESKTOP
+  corrigir unique keys
+  ajustar css mobile
+  ajustar responsividade
+
+    DESKTOP
+  ajustar grids
+*/
