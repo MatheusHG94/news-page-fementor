@@ -2,8 +2,8 @@
 
 .recentNews {
     background-color: $dark-blue;
-    color: white;
     padding: 0 1.5rem;
+    margin: 5rem 0;
 
     h2 {
         color: $orange;
@@ -24,14 +24,15 @@
         }
 
         p{
-            color: $off-white;
+            color: $light-grayish-blue;
             font-weight: 300;
-            line-height: 2;
+            line-height: 1.8;
             font-size: 1rem;
         }
         
         &:last-child {
             border: 0;
+            margin: 0;
         }
     }
 }
