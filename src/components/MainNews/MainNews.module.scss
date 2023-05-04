@@ -2,18 +2,19 @@
 
 .mainNews {
     margin: 3rem 0 5rem 0;
+    max-width: 600px;
 
     h1 {
         color: $dark-blue;
         font-weight: $font-bolder;
-        font-size: 3rem;
+        font-size: 10vw;
         margin-bottom: 1rem;
     }
 
     p {
         color: $grayish-blue;
         font-weight: $font-normal;
-        font-size: 1rem;
+        font-size: 4vw;
         line-height: 2;
         margin-bottom: 1.5rem;
     }
