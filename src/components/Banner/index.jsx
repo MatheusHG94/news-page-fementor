@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from './Banner.module.scss'
-import image from './image-web-3-mobile.jpg'
+import imageMobile from './image-web-3-mobile.jpg'
+import imageDesktop from './image-web-3-desktop.jpg'
 
 export default function Banner() {
   return (
-    <img className={styles.banner} src={image} alt="banner of different geometric shapes" />
+    <picture className={styles.banner} >
+      <source srcSet={imageDesktop} media='(min-width: 900px)' />
+      <img src={imageMobile} alt="banner containing different geometric shapes" />
+    </picture>
   )
 }

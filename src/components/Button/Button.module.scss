@@ -4,9 +4,22 @@
     border: 0;
     padding: 1rem 2.5rem;
     background-color: $red;
+
     color: $off-white;
-    text-transform: uppercase;
     font-weight: $font-bold;
-    letter-spacing: 4px;
     font-size: 3.5vw;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+@media screen and (max-width: 375px) {
+    .button {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .button {
+        font-size: 1.3rem;
+    }
 }
