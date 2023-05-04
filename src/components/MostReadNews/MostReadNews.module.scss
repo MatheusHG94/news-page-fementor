@@ -1,16 +1,15 @@
 @import 'styles/variables';
 
 .mostReadNews {
-    margin: 5rem 0;
+    margin: 4rem 0;
 
     .news {
         display: grid;
-        grid-template-columns: minmax(100px, 150px) minmax(220px, 400px);
+        grid-template-columns: minmax(100px, 150px) minmax(220px, 300px);
         grid-template-rows: repeat(3, auto);
         gap: 0 1rem;
 
         margin-bottom: 2rem;
-        max-width: 600px;
 
         img {
             width: 100%;
@@ -20,55 +19,27 @@
         span {
             color: $light-grayish-blue;
             font-weight: 700;
-            font-size: 9vw;
+            font-size: 2.5rem;
+            align-self: start;
         }
 
         h3 {
             color: $dark-blue;
-            font-size: 5vw;
+            font-size: 1.3rem;
+            font-weight: 800;
+            align-self: center;
+        }
+
+        h3:hover {
+            color: $red;
+            cursor: pointer;
         }
 
         p {
             color: $grayish-blue;
-            font-size: 4vw;
-        }
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .mostReadNews {
-
-        .news {
-            span {
-                font-size: 1.7rem;
-            }
-
-            h3 {
-                font-size: 1.3rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .mostReadNews {
-
-        .news {
-            span {
-                font-size: 3.3rem;
-            }
-
-            h3 {
-                font-size: 1.9rem;
-            }
-
-            p {
-                font-size: 1.5rem;
-            }
+            font-size: 1rem;
+            line-height: 2;
+            align-self: end;
         }
     }
 }

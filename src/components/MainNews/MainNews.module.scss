@@ -1,45 +1,21 @@
 @import 'styles/variables';
 
 .mainNews {
-    margin: 2.5rem 0 4rem 0;
-    max-width: 600px;
+    margin: 1.5rem 0 4rem 0;
+    max-width: 500px;
 
     h1 {
         color: $dark-blue;
         font-weight: $font-bolder;
-        font-size: 10vw;
+        font-size: 2.8rem;
         margin-bottom: 1rem;
     }
 
     p {
         color: $grayish-blue;
         font-weight: $font-normal;
-        font-size: 4vw;
+        font-size: 1rem;
         line-height: 2;
         margin-bottom: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .mainNews {
-        h1 {
-            font-size: 2.3rem;
-        }
-
-        p {
-            font-size: 1rem;
-        }
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .mainNews {
-        h1 {
-            font-size: 3.8rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
     }
 }

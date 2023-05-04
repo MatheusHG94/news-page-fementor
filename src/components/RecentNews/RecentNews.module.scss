@@ -3,74 +3,44 @@
 .recentNews {
     background-color: $dark-blue;
     padding: 0 1.5rem;
-    margin: 5rem 0;
-    max-width: 600px;
+    margin: 4rem 0;
+    max-width: 500px;
 
     h2 {
         color: $orange;
-        font-size: 6vw;
-        padding: 2rem 0;
+        font-size: 2rem;
+        padding: 2rem 0 1.5rem 0;
     }
 
     .news {
 
         padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         border-bottom: 1px solid $grayish-blue;
 
         h3 {
+            display: inline-block;
             color: $off-white;
             margin-bottom: .5rem;
             font-weight: 700;
-            font-size: 5vw;
+            font-size: 1.2rem;
+        }
+
+        h3:hover {
+            color: $orange;
+            cursor: pointer;
         }
 
         p{
             color: $light-grayish-blue;
             font-weight: 300;
             line-height: 1.8;
-            font-size: 4vw;
+            font-size: 1rem;
         }
         
         &:last-child {
             border: 0;
             margin: 0;
-        }
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .recentNews {
-        h2 {
-            font-size: 1.5rem;
-        }
-
-        .news {
-            h3 {
-                font-size: 1.5rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .recentNews {
-        h2 {
-            font-size: 2.2rem;
-        }
-
-        .news {
-            h3 {
-                font-size: 1.9rem;
-            }
-
-            p {
-                font-size: 1.5rem;
-            }
         }
     }
 }

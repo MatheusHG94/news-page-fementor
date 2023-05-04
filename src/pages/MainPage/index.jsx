@@ -21,8 +21,7 @@ export default function MainPage() {
 
 /* 
     ANTES DESKTOP
-  ajustar css mobile
-  ajustar responsividade
+  criar menu
 
     DESKTOP
   ajustar grids
