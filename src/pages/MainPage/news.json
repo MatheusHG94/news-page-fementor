@@ -1,0 +1,44 @@
+[
+    {
+        "imgsrc": "/assets/images/image-retro-pcs.jpg",
+        "order": "01",
+        "headline": "Reviving Retro PCs",
+        "brief": "What happens when old PCs are given modern upgrades?",
+        "section": "most read" 
+    },
+    {
+        "imgsrc": "/assets/images/image-top-laptops.jpg",
+        "order": "02",
+        "headline": "Top 10 Laptops of 2022",
+        "brief": "Our best picks for various needs and budgets.",
+        "section": "most read" 
+    },
+    {
+        "imgsrc": "/assets/images/image-gaming-growth.jpg",
+        "order": "03",
+        "headline": "The Growth of Gaming",
+        "brief": "How the pandemic has sparked fresh opportunities.",
+        "section": "most read" 
+    },
+    {
+        "imgsrc": "",
+        "order": "",
+        "headline": "Hydrogen VS Electric Cars",
+        "brief": "Will hydrogen-fueled card ever catch up to EVs?",
+        "section": "recent" 
+    },
+    {
+        "imgsrc": "",
+        "order": "",
+        "headline": "The Downsides of AI Artistry",
+        "brief": "What are the possible adverse effects of on-demand AI image generation?",
+        "section": "recent" 
+    },
+    {
+        "imgsrc": "",
+        "order": "",
+        "headline": "Is VC Fundind Drying Up?",
+        "brief": "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
+        "section": "recent" 
+    }
+]
