@@ -1,6 +1,92 @@
+@import 'styles/variables';
+
 .menu {
-    
-    img {
+
+    button {
+        border: 0;
+        background-color: inherit;
         cursor: pointer;
+    }
+
+    &__list {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70vw;
+        z-index: 15;
+
+        transition: 1s;
+
+        button {
+            position: sticky;
+            top: 2rem;
+            margin-left: 2rem;
+
+            transition: 1s;
+        }
+
+        ul {
+            list-style: none;
+            margin: 10rem 2.5rem;
+
+            li {
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
+                font-weight: $font-normal;
+                color: $dark-blue;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__listHidden {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 0vw;
+        z-index: 15;
+
+        transition: 1s;
+
+        button {
+            position: sticky;
+            top: 2rem;
+            margin-left: 2rem;
+
+            transition: 1s;
+        }
+
+        ul {
+            list-style: none;
+            margin: 10rem 2.5rem;
+
+            li {
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
+                font-size: $font-bold;
+                color: $dark-blue;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+.backdrop {
+    display: none;
+    
+    &Active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000;
+        opacity: .3;
+        z-index: 10;
     }
 }
