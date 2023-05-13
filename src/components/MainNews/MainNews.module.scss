@@ -7,14 +7,14 @@
     h1 {
         color: $dark-blue;
         font-weight: $font-bolder;
-        font-size: 2.8rem;
+        font-size: $main-title-size;
         margin-bottom: 1rem;
     }
 
     p {
         color: $grayish-blue;
         font-weight: $font-normal;
-        font-size: 1rem;
+        font-size: $paragraph-size;
         line-height: 2;
         margin-bottom: 1.5rem;
     }
