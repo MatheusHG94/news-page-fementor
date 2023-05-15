@@ -16,12 +16,11 @@ export default function Menu() {
   }
 
   return (
-    <>
-    <div className={styles.menu} >
+    <div className={styles.Menu} >
       <button onClick={() => toggleMenu()} >
         <img src={menu} alt="Hamburger menu icon" />
       </button>
-      <nav className={isActive ? styles.menu__list : styles.menu__listHidden} >
+      <nav className={isActive ? styles.Menu_list : styles.Menu_list___hidden} >
         <button onClick={() => toggleMenu()} >
           <img src={menuClose} alt="Close menu icon" />
         </button>
@@ -33,8 +32,7 @@ export default function Menu() {
           <li>Categories</li>
         </ul>
       </nav>
+      <div className={isActive ? styles.Menu_backdrop___active : styles.Menu_backdrop} ></div>
     </div>
-    <div className={isActive ? styles.backdropActive : styles.backdrop} ></div>
-    </>
   )
 }

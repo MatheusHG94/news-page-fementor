@@ -3,7 +3,7 @@ import Header from 'components/Header'
 import Banner from 'components/Banner'
 import MainNews from 'components/MainNews'
 import RecentNews from 'components/RecentNews'
-import MostReadNews from 'components/MostReadNews'
+import PopularNews from 'components/PopularNews'
 
 export default function MainPage() {
   return (
@@ -13,7 +13,7 @@ export default function MainPage() {
         <Banner />
         <MainNews />
         <RecentNews />
-        <MostReadNews />
+        <PopularNews />
       </main>
     </>
   )

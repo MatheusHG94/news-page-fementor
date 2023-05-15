@@ -1,9 +1,9 @@
 @import 'styles/variables';
 
-.mostReadNews {
+.PopularNews {
     margin: 4rem 0 3rem 0;
 
-    .news {
+    .News {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(3, auto);

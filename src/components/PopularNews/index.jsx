@@ -1,16 +1,16 @@
 import React from 'react'
-import styles from './MostReadNews.module.scss'
+import styles from './PopularNews.module.scss'
 import newsFullList from 'pages/MainPage/news.json'
 import News from 'components/News'
 import { v4 as uuidv4 } from 'uuid';
 
-export default function MostReadNews() {
+export default function PopularNews() {
 
-  const mostReadNewsList = newsFullList.filter(item => item.section === 'most read');
+  const popularNewsList = newsFullList.filter(item => item.section === 'most read');
 
   return (
-    <section className={styles.mostReadNews} >
-      {mostReadNewsList.map(item =>
+    <section className={styles.PopularNews} >
+      {popularNewsList.map(item =>
         <News
           key={uuidv4()}
           imgSrc={item.imgsrc}

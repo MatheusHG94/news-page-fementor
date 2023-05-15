@@ -9,7 +9,7 @@ export default function RecentNews() {
   const recentNewsList = newsFullList.filter(item => item.section === 'recent');
 
   return (
-    <section className={styles.recentNews} >
+    <section className={styles.RecentNews} >
         <h2>New</h2>
         {recentNewsList.map(item =>
             <News
