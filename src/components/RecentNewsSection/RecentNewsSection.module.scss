@@ -1,0 +1,13 @@
+@import 'styles/variables';
+
+.RecentNews {
+    background-color: $dark-blue;
+    padding: 0 1.5rem;
+    max-width: 500px;
+
+    &_sectionTitle {
+        color: $orange;
+        font-size: 9vw;
+        padding: 2rem 0 1.5rem 0;
+    }
+}

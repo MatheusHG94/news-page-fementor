@@ -1,17 +1,16 @@
 @import 'styles/variables';
 
 .MainNews {
-    margin: 1.5rem 0 4rem 0;
     max-width: 500px;
 
-    h1 {
+    &_title {
         color: $dark-blue;
         font-weight: $font-bolder;
         font-size: $main-title-size;
         margin-bottom: 1rem;
     }
 
-    p {
+    &_paragraph {
         color: $grayish-blue;
         font-weight: $font-normal;
         font-size: $paragraph-size;

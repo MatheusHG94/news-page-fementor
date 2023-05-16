@@ -1,0 +1,7 @@
+@import 'styles/variables';
+
+.PopularNews {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2rem;
+}

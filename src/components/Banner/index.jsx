@@ -7,7 +7,7 @@ export default function Banner() {
   return (
     <picture className={styles.Banner} >
       <source srcSet={imageDesktop} media='(min-width: 1280px)' />
-      <img src={imageMobile} alt="banner containing different geometric shapes" />
+      <img className={styles.Banner_image} src={imageMobile} alt="banner containing different geometric shapes" />
     </picture>
   )
 }

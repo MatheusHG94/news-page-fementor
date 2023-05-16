@@ -1,0 +1,40 @@
+@import 'styles/variables';
+
+.News {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 0 .5rem;
+
+    &_image {
+        width: 100%;
+        grid-row: 1 / 4;
+    }
+
+    &_order {
+        color: $light-grayish-blue;
+        font-size: 11vw;
+        font-weight: 700;
+        align-self: start;
+    }
+
+    &_title {
+        color: $dark-blue;
+        font-size: $title-size;
+        font-weight: 800;
+        line-height: 1.3;
+        align-self: center;
+    }
+
+    &_title:hover {
+        color: $red;
+        cursor: pointer;
+    }
+
+    &_paragraph {
+        color: $grayish-blue;
+        font-size: $paragraph-size;
+        line-height: 1.3;
+        align-self: end;
+    }
+}
