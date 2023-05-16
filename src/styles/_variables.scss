@@ -1,4 +1,4 @@
-//typography
+//typography - mobile
 $font-normal: 400;
 $font-bold: 700;
 $font-bolder: 800;
@@ -6,6 +6,11 @@ $font-bolder: 800;
 $paragraph-size: 4.3vw;
 $title-size: 5.5vw;
 $main-title-size: 12vw;
+
+//typography - desktop
+$desktop-paragraph-size: 1.2vw;
+$desktop-title-size: 2vw;
+$desktop-main-title-size: 5vw;
 
 //color
 $red: hsl(5, 85%, 63%);

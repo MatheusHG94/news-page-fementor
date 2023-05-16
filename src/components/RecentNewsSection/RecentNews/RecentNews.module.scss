@@ -30,3 +30,16 @@
         margin: 0;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .News {
+
+        &_title {
+            font-size: $desktop-title-size;
+        }
+
+        &_paragraph {
+            font-size: $desktop-paragraph-size;
+        }
+    }
+}

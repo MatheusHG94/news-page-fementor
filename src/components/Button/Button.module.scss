@@ -1,18 +1,25 @@
 @import 'styles/variables';
 
 .Button {
+    width: 55%;
     border: 0;
-    padding: 1rem 2.5rem;
+    padding: 1rem 0;
     background-color: $red;
 
     color: $off-white;
     font-weight: $font-bold;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     font-size: $paragraph-size;
 }
 
 .Button:hover {
     background-color: $dark-blue;
     cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+    .Button {
+        font-size: $desktop-paragraph-size;
+    }
 }

@@ -5,3 +5,9 @@
         max-width: 100%;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .Banner {
+        grid-area: banner;
+    }
+}

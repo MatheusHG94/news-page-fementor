@@ -5,3 +5,12 @@
     grid-template-rows: repeat(3, 1fr);
     row-gap: 2rem;
 }
+
+@media screen and (min-width: 1440px) {
+    .PopularNews {
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-area: popular;
+    }
+}
