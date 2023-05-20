@@ -39,7 +39,7 @@
                 cursor: pointer;
             }
         }
-        
+
         &___hidden {
             background-color: #fff;
             position: fixed;
@@ -48,21 +48,21 @@
             height: 100vh;
             width: 0vw;
             z-index: 15;
-    
+
             transition: 1s;
-    
+
             button {
                 position: sticky;
                 top: 2rem;
                 margin-left: 2rem;
-    
+
                 transition: 1s;
             }
-    
+
             ul {
                 list-style: none;
                 margin: 7rem 2.5rem;
-    
+
                 li {
                     margin-bottom: 2rem;
                     font-size: $title-size;
@@ -76,8 +76,8 @@
 
     &_backdrop {
         display: none;
-        
-        &___active{
+
+        &___active {
             position: fixed;
             top: 0;
             left: 0;
@@ -86,6 +86,28 @@
             background-color: #000000;
             opacity: .3;
             z-index: 10;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Menu_desktop {
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            column-gap: 4rem;
+
+            li {
+                font-size: $desktop-paragraph-size;
+                font-weight: $font-normal;
+                color: $dark-blue;
+                cursor: pointer;
+            }
+
+            li:hover {
+                color: $red;
+            }
         }
     }
 }
