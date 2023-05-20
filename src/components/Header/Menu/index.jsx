@@ -33,11 +33,11 @@ export default function Menu() {
   if (screenWidth < 1024) {
     return (
       <div className={styles.Menu} >
-        <button onClick={() => toggleMenu()} >
+        <button className={styles.Menu_hamburgerBtn} onClick={() => toggleMenu()} >
           <img src={menu} alt="Hamburger menu icon" />
         </button>
         <nav className={isActive ? styles.Menu_list : styles.Menu_list___hidden} >
-          <button onClick={() => toggleMenu()} >
+          <button className={styles.Menu_closeBtn} onClick={() => toggleMenu()} >
             <img src={menuClose} alt="Close menu icon" />
           </button>
           <ul>
