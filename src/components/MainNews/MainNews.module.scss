@@ -21,8 +21,8 @@
 
 @media screen and (min-width: 1440px) {
     .MainNews {
-        grid-template-rows: repeat(2, auto);
-        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 0;
 
         grid-area: main;
