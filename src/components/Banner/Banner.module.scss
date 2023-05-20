@@ -1,12 +1,11 @@
 .Banner {
 
     &_image {
-        max-height: 437px;
         max-width: 100%;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .Banner {
         grid-area: banner;
     }

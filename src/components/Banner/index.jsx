@@ -6,7 +6,7 @@ import imageDesktop from './image-web-3-desktop.jpg'
 export default function Banner() {
   return (
     <picture className={styles.Banner} >
-      <source srcSet={imageDesktop} media='(min-width: 1280px)' />
+      <source srcSet={imageDesktop} media='(min-width: 1024px)' />
       <img className={styles.Banner_image} src={imageMobile} alt="banner containing different geometric shapes" />
     </picture>
   )

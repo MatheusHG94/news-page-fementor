@@ -18,8 +18,10 @@
     cursor: pointer;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .Button {
         font-size: $desktop-paragraph-size;
+        padding: 0;
+        height: 4rem;
     }
 }

@@ -19,9 +19,9 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .MainNews {
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr auto;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 0;
 

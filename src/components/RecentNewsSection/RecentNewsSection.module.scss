@@ -3,7 +3,6 @@
 .RecentNews {
     background-color: $dark-blue;
     padding: 0 1.5rem;
-    max-width: 500px;
 
     &_sectionTitle {
         color: $orange;
@@ -12,7 +11,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .RecentNews {
         grid-area: recent;
 
