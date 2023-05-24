@@ -5,6 +5,8 @@ import menu from './icon-menu.svg'
 
 export default function Menu() {
 
+  /* open/close menu */
+
   const [isActive, setActive] = useState(false);
 
   const toggleMenu = () => {
@@ -14,6 +16,8 @@ export default function Menu() {
       setActive(true);
     }
   }
+
+  /* calculating screen width */
 
   const [screenWidth, getScreenWidth] = useState(window.innerWidth);
   const setScreenWidth = () => getScreenWidth(window.innerWidth);
@@ -28,18 +32,32 @@ export default function Menu() {
     )
   }, [screenWidth])
 
-  console.log(screenWidth);
+  /* diff rendering based on screen width */
 
   if (screenWidth < 1024) {
     return (
-      <div className={styles.Menu} >
-        <button className={styles.Menu_hamburgerBtn} onClick={() => toggleMenu()} >
+      <div className={styles.Menu}>
+        <button 
+          className={styles.Menu_btn} 
+          onClick={() => toggleMenu()} 
+        >
           <img src={menu} alt="Hamburger menu icon" />
         </button>
-        <nav className={isActive ? styles.Menu_list : styles.Menu_list___hidden} >
-          <button className={styles.Menu_closeBtn} onClick={() => toggleMenu()} >
+
+        <nav className={`
+          ${styles.Menu___hidden}
+          ${isActive ? styles.Menu___visible : ""}
+        `}>
+          <button 
+            className={`
+              ${styles.Menu_btn}
+              ${styles.Menu_closeBtn}
+            `} 
+            onClick={() => toggleMenu()}
+          >
             <img src={menuClose} alt="Close menu icon" />
           </button>
+
           <ul>
             <li>Home</li>
             <li>New</li>
@@ -48,13 +66,16 @@ export default function Menu() {
             <li>Categories</li>
           </ul>
         </nav>
-        <div className={isActive ? styles.Menu_backdrop___active : styles.Menu_backdrop} ></div>
+        <div className={`
+          ${styles.Menu_backdrop___hidden}
+          ${isActive ? styles.Menu_backdrop___visible : ""}
+        `}></div>
       </div>
     )
   }
 
   return (
-    <nav className={styles.Menu_desktop}>
+    <nav className={styles.Menu___desktop}>
       <ul>
         <li>Home</li>
         <li>New</li>

@@ -2,96 +2,65 @@
 
 .Menu {
 
-    button {
+    &_btn {
         border: 0;
         background-color: inherit;
         cursor: pointer;
     }
+    
+    &_closeBtn {
+        position: fixed;
+        top: 2rem;
+        margin-left: 2rem;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 7rem 2.5rem;
 
-    &_list {
+        li {
+            margin-bottom: 2rem;
+            font-size: $title-size;
+            font-weight: $font-normal;
+            color: $dark-blue;
+            cursor: pointer;
+        }
+    }
+    
+    &___hidden {
+        display: none;
         background-color: #fff;
         position: fixed;
         top: 0;
         right: 0;
         height: 100vh;
-        width: 70vw;
+        width:70vw;
         z-index: 15;
-
-        transition: 1s;
-
-        button {
-            position: sticky;
-            top: 2rem;
-            margin-left: 2rem;
-
-            transition: 1s;
-        }
-
-        ul {
-            list-style: none;
-            margin: 7rem 2.5rem;
-
-            li {
-                margin-bottom: 2rem;
-                font-size: $title-size;
-                font-weight: $font-normal;
-                color: $dark-blue;
-                cursor: pointer;
-            }
-        }
-
-        &___hidden {
-            background-color: #fff;
-            position: fixed;
-            top: 0;
-            right: 0;
-            height: 100vh;
-            width: 0vw;
-            z-index: 15;
-
-            transition: 1s;
-
-            button {
-                position: sticky;
-                top: 2rem;
-                margin-left: 2rem;
-
-                transition: 1s;
-            }
-
-            ul {
-                list-style: none;
-                margin: 7rem 2.5rem;
-
-                li {
-                    margin-bottom: 2rem;
-                    font-size: $title-size;
-                    font-weight: $font-normal;
-                    color: $dark-blue;
-                    cursor: pointer;
-                }
-            }
-        }
     }
 
-    &_backdrop {
-        display: none;
+    &___visible {
+        display: block;
+    }
 
-        &___active {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: #000000;
-            opacity: .3;
-            z-index: 10;
-        }
+    &_backdrop___hidden {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000;
+        opacity: .3;
+        z-index: 10;
+    }
+    
+    &_backdrop___visible {
+        display: block;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .Menu_desktop {
+    .Menu___desktop {
         ul {
             list-style: none;
             display: grid;
