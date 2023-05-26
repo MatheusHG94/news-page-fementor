@@ -65,7 +65,7 @@
             list-style: none;
             display: grid;
             grid-template-columns: repeat(5, auto);
-            column-gap: 4rem;
+            column-gap: 3rem;
 
             li {
                 font-size: $desktop-paragraph-size;
